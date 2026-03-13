@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.6.1">
+  <diagram name="Página-1" id="mhJ3fZ9kLb6Tz_73WzA2">
+    <mxGraphModel dx="1305" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1Uao65FDt8DOgHwGax3I-2" edge="1" parent="1" source="fbqtp4k481nwc1gYTFYD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fbqtp4k481nwc1gYTFYD-3" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;inicio&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="350" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="1Uao65FDt8DOgHwGax3I-4" edge="1" parent="1" source="1Uao65FDt8DOgHwGax3I-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Uao65FDt8DOgHwGax3I-3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="&lt;div&gt;leer nombre&amp;nbsp;&lt;/div&gt;&lt;div&gt;precio * cantidad&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="330" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="1Uao65FDt8DOgHwGax3I-6" edge="1" parent="1" source="1Uao65FDt8DOgHwGax3I-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Uao65FDt8DOgHwGax3I-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;calcular costo_total =&lt;/div&gt;&lt;div&gt;precio * cantidad&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="1Uao65FDt8DOgHwGax3I-12" edge="1" parent="1" source="1Uao65FDt8DOgHwGax3I-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Uao65FDt8DOgHwGax3I-8" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Mostrar nombre,precio, cantidad, y costo_total" vertex="1">
+          <mxGeometry height="60" width="140" x="330" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="1Uao65FDt8DOgHwGax3I-13" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="fin" vertex="1">
+          <mxGeometry height="60" width="100" x="350" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
