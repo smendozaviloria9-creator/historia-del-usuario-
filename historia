@@ -1,0 +1,39 @@
+# ---------------------------------------------------------
+# Programa: Registro de Inventario
+# Descripción: Solicita datos de un producto y calcula el total.
+# ---------------------------------------------------------
+
+# 2. Entrada de datos y validación
+# Solicitar el nombre del producto
+nombre = input("Ingrese el nombre del producto: ")
+
+# Validar que el precio sea un número válido
+while True:
+    try:
+        precio_input = input("Ingrese el precio del producto: ")
+        precio = float(precio_input)
+        break  # Sale del bucle si la conversión es exitosa
+    except ValueError:
+        print("Error: El precio debe ser un número decimal (float). Intente de nuevo.")
+
+# Validar que la cantidad sea un número entero válido
+while True:
+    try:
+        cantidad_input = input("Ingrese la cantidad del producto: ")
+        cantidad = int(cantidad_input)
+        break  # Sale del bucle si la conversión es exitosa
+    except ValueError:
+        print("Error: La cantidad debe ser un número entero (int). Intente de nuevo.")
+
+# 3. Operación matemática (costo total)
+# Se multiplica el precio por la cantidad una vez validados los datos
+costo_total = precio * cantidad
+
+# 4. Mostrar resultados en consola
+# Se utiliza el formato exacto solicitado en el ejercicio
+print(
+    f"Producto: {nombre} / Precio: {precio} / Cantidad: {cantidad} / Total: {costo_total}")
+
+# 5. Documentación del código:
+# Este programa permite gestionar el ingreso de mercancía básica, asegurando que los
+# cálculos financieros sean precisos mediante la validación de tipos de datos.
