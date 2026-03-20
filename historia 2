@@ -1,0 +1,64 @@
+def agregar_producto(inventario):
+    print( "--- registro de inventario ---")
+    try:
+        # Guardar como Diccionario
+        nombre = input("nombre de producto:")
+        precio = float(input("precio: " ))
+        cantidad = int(input("cantidad: " ))
+
+        producto = {
+           "nombre" : nombre,
+           "precio" : precio,
+           "cantidad" : cantidad
+        }
+        inventario.append(producto)
+        print(f"¡{nombre} agregado ")
+    except ValueError:
+        print("error:el precio y la cantidad deben de ser valores numerico")   
+def mostrar_inventario(inventario):
+    """tarea 3: recorrer el inventario y mustra los productos."""
+    print("--- inventario actual ---")
+    if not inventario:
+        print("el inventario esta vacio.")
+    else:
+        for p in inventario:
+            print(f"producto: {p['nombre']} | precio:${p['precio']} | cantidad: {p['cantidad']}")
+def calcular_inventario(inventario):
+    """tarea 4 :calcular el valor totaly la cantidad de producto."""
+    print("--- estadisticas del inventario ---")
+    if not inventario:
+        print("no hay datos para calcular estadistica.")
+        return
+    total_valor = sum(p['precio'] * p['cantidad'] for p in inventario)
+    total_productos = len(inventario)
+    
+    print(f"valor total del inventario: ${total_valor}")
+    print(f"cantidad de tipos de productos registrados: {total_productos} ")
+
+def menu_principal():
+    """tarea 1 y 2: Manejo del menu y bucles principales."""
+    inventario = [] # Lista principal para almacenar dicionarios
+    
+    while True:
+        print("--- MENU DE GESTION ---")
+        print("1. agregar pruducto:")
+        print("2. mostrar inventario:")
+        print("3. calcular estadistica:")
+        print("4. salir")
+        
+        opcion = input("selecione una opcion:")
+        #uso de estructura  de control (if/elif/else)
+        if opcion == "1":
+            agregar_producto(inventario)
+        elif opcion == "2":
+            mostrar_inventario(inventario)
+        elif opcion == "3":
+            calcular_inventario(inventario)
+        elif opcion == "4":
+            print("salienda del sistema...")
+            break
+        else:
+            print("opcion no valida. intente de nuevo.")
+#ejecutar programa            
+if __name__ == "__main__":
+    menu_principal()
