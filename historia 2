@@ -1,64 +1,40 @@
-def agregar_producto(inventario):
-    print( "--- registro de inventario ---")
+# ---------------------------------------------------------
+# Programa: Registro de Inventario
+# Descripción: Solicita datos de un producto y calcula el total.
+# ---------------------------------------------------------
+
+# 2. Entrada de datos y validación
+# Solicitar el nombre del producto
+nombre = input("Ingrese el nombre del producto: ")
+
+# Validar que el precio sea un número válido
+while True:
     try:
-        # Guardar como Diccionario
-        nombre = input("nombre de producto:")
-        precio = float(input("precio: " ))
-        cantidad = int(input("cantidad: " ))
-
-        producto = {
-           "nombre" : nombre,
-           "precio" : precio,
-           "cantidad" : cantidad
-        }
-        inventario.append(producto)
-        print(f"¡{nombre} agregado ")
+        precio_input = input("Ingrese el precio del producto: ")
+        precio = float(precio_input)
+        break  # Sale del bucle si la conversión es exitosa
     except ValueError:
-        print("error:el precio y la cantidad deben de ser valores numerico")   
-def mostrar_inventario(inventario):
-    """tarea 3: recorrer el inventario y mustra los productos."""
-    print("--- inventario actual ---")
-    if not inventario:
-        print("el inventario esta vacio.")
-    else:
-        for p in inventario:
-            print(f"producto: {p['nombre']} | precio:${p['precio']} | cantidad: {p['cantidad']}")
-def calcular_inventario(inventario):
-    """tarea 4 :calcular el valor totaly la cantidad de producto."""
-    print("--- estadisticas del inventario ---")
-    if not inventario:
-        print("no hay datos para calcular estadistica.")
-        return
-    total_valor = sum(p['precio'] * p['cantidad'] for p in inventario)
-    total_productos = len(inventario)
-    
-    print(f"valor total del inventario: ${total_valor}")
-    print(f"cantidad de tipos de productos registrados: {total_productos} ")
+        print("Error: El precio debe ser un número decimal (float). Intente de nuevo.")
 
-def menu_principal():
-    """tarea 1 y 2: Manejo del menu y bucles principales."""
-    inventario = [] # Lista principal para almacenar dicionarios
-    
-    while True:
-        print("--- MENU DE GESTION ---")
-        print("1. agregar pruducto:")
-        print("2. mostrar inventario:")
-        print("3. calcular estadistica:")
-        print("4. salir")
-        
-        opcion = input("selecione una opcion:")
-        #uso de estructura  de control (if/elif/else)
-        if opcion == "1":
-            agregar_producto(inventario)
-        elif opcion == "2":
-            mostrar_inventario(inventario)
-        elif opcion == "3":
-            calcular_inventario(inventario)
-        elif opcion == "4":
-            print("salienda del sistema...")
-            break
-        else:
-            print("opcion no valida. intente de nuevo.")
-#ejecutar programa            
-if __name__ == "__main__":
-    menu_principal()
+# Validar que la cantidad sea un número entero válido
+while True:
+    try:
+        cantidad_input = input("Ingrese la cantidad del producto: ")
+        cantidad = int(cantidad_input)
+        break  # Sale del bucle si la conversión es exitosa
+    except ValueError:
+        print("Error: La cantidad debe ser un número entero (int). Intente de nuevo.")
+
+# 3. Operación matemática (costo total)
+# Se multiplica el precio por la cantidad una vez validados los datos
+costo_total = precio * cantidad
+
+# 4. Mostrar resultados en consola
+# Se utiliza el formato exacto solicitado en el ejercicio
+print(
+    f"Producto: {nombre} / Precio: {precio} / Cantidad: {cantidad} / Total: {costo_total}")
+
+# 5. Documentación del código:
+# Este programa permite gestionar el ingreso de mercancía básica, asegurando que los
+# cálculos financieros sean precisos mediante la validación de tipos de datos.
+
