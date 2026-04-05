@@ -300,8 +300,7 @@ def main():
 
 if __name__ == "__main__":
     main()   
-print(
-    f"Producto: {nombre} / Precio: {precio} / Cantidad: {cantidad} / Total: {costo_total}")
+
 
 # 5. Documentación del código:
 # Este programa permite gestionar el ingreso de mercancía básica, asegurando que los
