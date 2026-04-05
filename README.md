@@ -1,7 +1,4 @@
-Sistema de Gestión de Inventario (Python) 📦
-Un script robusto de línea de comandos diseñado para administrar productos, controlar existencias y generar estadísticas de inventario de forma sencilla y eficiente.
-
- Características
+Características
 CRUD Completo: Agregar, buscar, actualizar y eliminar productos.
 Validación de Datos: Control de precios y cantidades negativas, así como entradas no numéricas.
 Persistencia de Datos: Importación y exportación de inventario mediante archivos CSV.
@@ -15,6 +12,7 @@ Módulos estándar: csv, os (no requieren instalación adicional).
  Instalación y Uso
 Clona o descarga el archivo inventario.py.
 Ejecuta el programa desde tu terminal:
+
 
 ```bash
 python inventario.py
