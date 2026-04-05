@@ -14,6 +14,7 @@ Clona o descarga el archivo inventario.py.
 Ejecuta el programa desde tu terminal:
 
 
+```bash
 python inventario.py
 Al iniciar el programa, verás un menú interactivo:
 Agregar producto: Solicita nombre, precio y cantidad. No permite nombres duplicados.
